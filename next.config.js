@@ -1,5 +1,8 @@
-/** @type {import('next').NextConfig} */
-module.exports = {
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
+  output: "export",
   output: "export",
   basePath: process.env.NODE_ENV === "production" ? "" : undefined,
   experimental: {
@@ -10,3 +13,5 @@ module.exports = {
   },
   reactStrictMode: true,
 };
+
+module.exports = nextConfig;
